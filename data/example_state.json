@@ -1,0 +1,95 @@
+{
+  "targets": {
+    "current_milestone": "first paid enterprise pilot",
+    "revenue_target": 1000000,
+    "contracted_revenue_target": 1000000,
+    "qualified_pipeline_target": 4000000
+  },
+  "actuals": {
+    "revenue": 0,
+    "contracted_revenue": 0
+  },
+  "funnel_metrics": {
+    "priority_accounts": 5,
+    "accounts_with_senior_buyer": 4,
+    "reply_rate": 0.1,
+    "reply_rate_floor": 0.08,
+    "conversation_to_meeting_rate": 0.25,
+    "conversation_to_meeting_floor": 0.2,
+    "meeting_to_pilot_rate": 0.2,
+    "meeting_to_pilot_floor": 0.15
+  },
+  "accounts": [
+    {"id": "adani-cement", "organization": "Adani Cement", "icp_score": 0.95},
+    {"id": "bpcl", "organization": "BPCL", "icp_score": 0.92},
+    {"id": "jsw", "organization": "JSW", "icp_score": 0.95},
+    {"id": "iocl", "organization": "Indian Oil Corporation", "icp_score": 0.94},
+    {"id": "shree-cement", "organization": "Shree Cement", "icp_score": 0.93}
+  ],
+  "opportunities": [
+    {
+      "id": "opp-adani-1",
+      "account": "Adani Cement",
+      "stage": "connected",
+      "plausible_deal_value": 500000,
+      "probability": 0.08,
+      "economic_buyer": "Chief Sustainability Officer",
+      "pain": "Potential CCTS/carbon-accounting and decarbonisation workflow relevance",
+      "trigger": "Senior sustainability buyer identified",
+      "confidence": 0.65,
+      "urgency_score": 0.6,
+      "strategic_account_value": 0.9
+    },
+    {
+      "id": "opp-bpcl-1",
+      "account": "BPCL",
+      "stage": "connected",
+      "plausible_deal_value": 500000,
+      "probability": 0.08,
+      "economic_buyer": "Chief General Manager - Net Zero Initiatives",
+      "pain": "Net-zero and enterprise emissions workflow relevance",
+      "confidence": 0.65,
+      "urgency_score": 0.7,
+      "strategic_account_value": 0.9
+    },
+    {
+      "id": "opp-jsw-1",
+      "account": "JSW",
+      "stage": "conversation",
+      "plausible_deal_value": 750000,
+      "probability": 0.12,
+      "economic_buyer": "Group Chief Sustainability Officer",
+      "pain": "High-emissions steel operations with carbon-accounting and decarbonisation complexity",
+      "confidence": 0.7,
+      "urgency_score": 0.8,
+      "strategic_account_value": 1.0
+    },
+    {
+      "id": "opp-iocl-1",
+      "account": "Indian Oil Corporation",
+      "stage": "prospect",
+      "plausible_deal_value": 500000,
+      "probability": 0.05,
+      "economic_buyer": null,
+      "pain": "Potential enterprise carbon-accounting relevance; senior buyer not yet verified",
+      "confidence": 0.45,
+      "urgency_score": 0.5,
+      "strategic_account_value": 0.9
+    },
+    {
+      "id": "opp-shree-1",
+      "account": "Shree Cement",
+      "stage": "connected",
+      "plausible_deal_value": 500000,
+      "probability": 0.08,
+      "economic_buyer": "Corporate Head - Environment",
+      "pain": "Cement emissions, environment reporting and carbon-market readiness",
+      "confidence": 0.65,
+      "urgency_score": 0.7,
+      "strategic_account_value": 0.9
+    }
+  ],
+  "data_warnings": [
+    "Example values are illustrative only and must be replaced with verified live BioX pipeline data before commercial use."
+  ]
+}
