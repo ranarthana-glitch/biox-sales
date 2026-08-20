@@ -51,6 +51,9 @@ UPSTREAM_SKILLS=(
 echo "Cloning selected upstream sales skills..."
 git clone --depth 1 https://github.com/louisblythe/Sales-Skills.git "$TMP/sales-skills" >/dev/null 2>&1
 
+echo "Cloning pricing strategy skill..."
+git clone --depth 1 https://github.com/mohitagw15856/pm-claude-skills.git "$TMP/pm-skills" >/dev/null 2>&1
+
 install_dir() {
   local src="$1"
   local name="$2"
@@ -71,6 +74,13 @@ for skill in "${UPSTREAM_SKILLS[@]}"; do
   fi
   install_dir "$src" "$skill"
 done
+
+PRICING_SRC="$TMP/pm-skills/skills/pricing-strategy"
+if [[ ! -f "$PRICING_SRC/SKILL.md" ]]; then
+  echo "ERROR: pricing-strategy skill missing" >&2
+  exit 1
+fi
+install_dir "$PRICING_SRC" "pricing-strategy"
 
 install_biox_skill() {
   local name="$1"
