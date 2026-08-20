@@ -1,6 +1,6 @@
 # BioX Selected Sales Skills
 
-This workspace intentionally uses a focused subset of the upstream Sales-Skills library.
+This workspace intentionally uses a focused subset of the upstream Sales-Skills library plus one SaaS pricing-strategy skill.
 
 ## Prospecting and account intelligence
 - ideal-customer-profile-matching
@@ -46,7 +46,10 @@ This workspace intentionally uses a focused subset of the upstream Sales-Skills 
 - micro-commitment-stacking
 - multi-stakeholder-thread-management
 
-## Installation
-Run `bash scripts/install-sales-skills.sh` from the repository root.
+## Pricing strategy
+- pricing-strategy — SaaS/digital-product pricing models, value metrics, tiering, enterprise pricing, competitive positioning, and rollout planning. Source: mohitagw15856/pm-claude-skills.
 
-Upstream source: louisblythe/Sales-Skills. Keep upstream skill behavior subordinate to the BioX-native rules in `skills/biox-*` and the revenue logic defined in this repository.
+## Installation
+For Codex, run `bash scripts/install-codex-skills.sh` from the repository root.
+
+Keep upstream skill behavior subordinate to the BioX-native rules in `skills/biox-*` and the revenue logic defined in this repository. In particular, use `pricing-strategy` as a framework for pricing decisions, while `biox-revenue-operator` governs BioX revenue targets and commercial priorities.
